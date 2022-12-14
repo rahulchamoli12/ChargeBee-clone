@@ -1,0 +1,129 @@
+/* menu part */
+#navbar{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 50px;
+   width: 100%;
+   height: 70px;
+}
+#navbar h1{
+    color: #303F9F;
+    margin-left: -60px;
+    margin-bottom: 30px;
+    font-family: cursive;
+}
+#navbar b{
+    color: #F9A825;
+}
+.lock{
+    color: #F9A825;
+    margin-right: 3px
+}
+#menu-button {
+   display: flex;
+   justify-content: space-between;
+   width: 14%;
+   align-items: center;
+}
+
+#menu-button  button{
+    background-color: #F9A825;
+    border: none;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+}
+#pages-link{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    margin-left: -190px!important;
+    align-items: center;
+}
+#navbar a{
+    text-decoration: none;
+    color: black;
+    font-family: "inherit";
+    font-weight: 380px;
+    text-shadow: 1pc;
+    font-size: 17px;
+}
+#logo{
+    margin-bottom: -300px!important;
+}
+
+
+/* footer part */
+#footer{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#footer h3{
+    color: blue;
+    margin-left: 37px;
+}
+#footer a{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+.list li{
+    line-height: 24px;
+    list-style-type: none;
+}
+#social{
+    display: block;
+    width: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+#social a{
+    color: black;
+}
+
+/* first-part */
+#first-part{
+    display: flex;
+}
+#first-part img{
+    width: 10px;
+}
+
+/* third-part */
+.third-part{
+    display: grid;
+    margin-top: 30px!important;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+
+}
+#cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px!important;
+}
+#cards div{
+    padding: 20px;
+    width: 90%;
+    margin-left: 30px;
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.white-box{
+    margin-top: 30px;
+    left: 30px;
+
+    width: 170px;
+    height: 170px;
+
+    background: radial-gradient(66.26% 66.26% at 50% 50%,rgba(253,248,244,.8) 0,rgba(225,225,225,.608333) 84.9%,rgba(253,248,244,.8) 100%);
+    border-radius: 20px;
+    transform: rotate(20deg);
+    animation: morph2 4s linear infinite alternate;
+}
