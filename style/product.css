@@ -1,0 +1,126 @@
+.backcolor{
+    background: #64B5F6;
+    width: 100%;
+}
+.fir-data{
+    width: 70%;
+    margin: auto;
+
+    padding: 150px;
+}
+.fir-heading{
+    position: relative;
+    transition: background-size 0.3s ease;
+    background: linear-gradient(to bottom, transparent 62%, #ffe6ab 0) center center/0% 75% no-repeat!important;
+    padding: 0 4px;
+    margin: 0 -4px;
+}
+.fir-innerdiv{
+   width: 80%;
+   margin: auto;
+    text-align: center;
+  
+}
+.fir-innerdiv h1{
+   font-size: 40px;
+   font-weight: bold;
+
+ }
+ .fir-innerdiv p{
+    font-size: 19px;
+   }
+button{
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    margin-left: 20px;
+    
+}
+.fir-getdemo{
+    background: #ffe6ab;
+}
+.fir-button span{
+    margin-left: 10px;
+}
+
+/* box of links  */
+.boxlinks{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 70%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    padding: 20px;
+    background: white;
+    margin-top: -50px;
+    margin-bottom: 70px;
+}
+.boxlinks h3{
+   font-size: 17px;
+   font-weight: bold;
+   width: 65%;
+}
+.boxlinks h3:hover{
+    color: #64B5F6;
+ }
+
+
+ /* <!-- Seamlessly manage part--> */
+.seam{
+    display: flex;
+    width: 55%;
+    margin: auto;
+ }
+ .seam h4{
+    font-weight: bold;
+    width: 55%; 
+ }
+ .seam-paradivs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+ }
+ .seam-paradivs p{
+    font-size: 14px;
+}
+
+ /* hr line  */
+hr { 
+    margin-bottom: 60px!important;
+    margin-top: 40px!important;
+    width: 70%;
+    display: block;
+    border-width: 1px;
+  } 
+
+  /* price the way */
+.paraimag{
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .paraimag p{
+    width: 90%;
+    text-align: justify;
+  }
+  .pricetheway{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .pricetheway a{
+    text-decoration: none;
+  }
+  .pricetheway h3{
+    line-height: 10px;
+    margin-bottom: 20px;
+}
+
+  /* <!-- fixed background --> */
+.backfixed{
+    width: 100%;
+    background-image: url(https://webstatic.chargebee.com/assets/web/543/images/product/testimonial/trail-testimonial.png);
+    filter: grayscale(100%);
+}
+.innerback{
+    display: flex;
+}
