@@ -6,12 +6,24 @@
    height: 50px;
    width: 100%;
    height: 70px;
+   margin-bottom: 30px;
+   background: #FFFDE7;
 }
+#navbar:hover{
+    background: #FFF59D;
+ }
+ #navbar span{
+   margin-left: 5px;
+ }
 #navbar h1{
     color: #303F9F;
     margin-left: -60px;
     margin-bottom: 30px;
     font-family: cursive;
+}
+#navbar h1:hover{
+    color: #303F9F;
+    padding: 10px;
 }
 #navbar b{
     color: #F9A825;
@@ -34,6 +46,10 @@
     color: white;
     font-weight: bold;
 }
+#menu-button i{
+    font-size: 26px;
+    margin-left: 39px!important;
+}
 #pages-link{
     display: flex;
     width: 40%;
@@ -51,6 +67,71 @@
 }
 #logo{
     margin-bottom: -300px!important;
+}
+
+
+
+
+/* <!-- slider  --> */
+.slider{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 70px!important;
+}
+.slider h2{
+    font-size: 7.2rem;
+    line-height: 8.2rem;
+    color: #F9A825;
+    font-weight: 800;
+    margin: 0 auto 1.5rem;
+    display: block;
+}
+.slider img{
+   height: 430px;
+   margin-left: 30px;
+}
+.slider p{
+    display: block;
+    margin-top: 20px!important;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    font-size: 17px;
+    text-align: justify;
+    width: 90%;
+    margin-bottom: 20px!important;
+}
+.book{
+    margin-top: 20px;
+    padding: 20px;
+    border: none;
+    font-size: 17px;
+    color: #e9e9e9;
+    font-weight: 600;
+    background: #303F9F;
+    border-radius: 20px;
+}
+.signup{
+    margin-left: 20px;
+    padding: 20px;
+    border: #303F9F;
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.signup:hover{
+    background: #F9A825;
+}
+.signup a{
+    text-decoration: none;
+}
+.signup a:hover{
+    color: white;
 }
 
 
@@ -164,7 +245,8 @@
     margin: auto;
     color: black;
     margin-bottom: 30px;
-    margin-top: 70px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 #stream h2{
     margin-bottom: 20px;
@@ -174,6 +256,7 @@
 #subbackmain{
     background: linear-gradient(120.88deg,#FFF8E1 29.77%,#FFE082 80.6%);
     padding: 80px 0 80px;  
+    border-radius: 30px;
     margin-bottom: 60px;
 }
 .subscription{

@@ -1,5 +1,79 @@
+/* menu part */
+#navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  height: 70px;
+  background: #FFFDE7;
+}
+#navbar:hover{
+   background: #FFF59D;
+}
+#navbar span{
+  margin-left: 5px;
+}
+#navbar h1{
+   color: #303F9F;
+   margin-left: -60px;
+   margin-bottom: 30px;
+   font-family: cursive;
+}
+#navbar h1:hover{
+   color: #303F9F;
+   padding: 10px;
+}
+#navbar b{
+   color: #F9A825;
+}
+.lock{
+   color: #F9A825;
+   margin-right: 3px
+}
+#menu-button {
+  display: flex;
+  justify-content: space-between;
+  width: 17%;
+  align-items: center;
+}
+
+#menu-button  button{
+   background-color: #F9A825;
+   border: none;
+   padding: 8px;
+   color: white;
+   font-weight: bold;
+   margin-bottom: 15px;
+}
+#pages-link{
+   display: flex;
+   width: 40%;
+   justify-content: space-around;
+   margin-left: -190px!important;
+   align-items: center;
+}
+#navbar a{
+   text-decoration: none;
+   color: black;
+   font-family: "inherit";
+   font-weight: 380px;
+   text-shadow: 1pc;
+   font-size: 17px;
+}
+#logo{
+   margin-bottom: -300px!important;
+}
+
+
+/* menu part over */
+
+
+/* blue back top part  */
 .backcolor{
-    background: #64B5F6;
+    /* background: #64B5F6; */
+
+    background: linear-gradient(-90deg, #42a3ca 0%, rgba(185, 43, 43, 0.69) 48.29%, rgba(48, 196, 188, 0) 100%);
     width: 100%;
 }
 .fir-data{
@@ -22,19 +96,26 @@
   
 }
 .fir-innerdiv h1{
+  margin-top: -20px;
    font-size: 40px;
    font-weight: bold;
-
+   color: black;
  }
  .fir-innerdiv p{
     font-size: 19px;
+    color: black;
    }
 button{
     padding: 14px;
     margin-top: 20px;
     border: none;
-    margin-left: 20px;
-    
+    margin-left: 20px; 
+    font-size: 17px;
+    font-weight: bold;
+}
+.signup a{
+  text-decoration: none;
+  color: #333;
 }
 .fir-getdemo{
     background: #ffe6ab;
@@ -109,18 +190,185 @@ hr {
   }
   .pricetheway a{
     text-decoration: none;
+    color: blue;
+    font-size: 12px;
   }
   .pricetheway h3{
     line-height: 10px;
     margin-bottom: 20px;
 }
 
-  /* <!-- fixed background --> */
-.backfixed{
-    width: 100%;
-    background-image: url(https://webstatic.chargebee.com/assets/web/543/images/product/testimonial/trail-testimonial.png);
-    filter: grayscale(100%);
+/* <!-- divs of para --> */
+.divsofpara{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  width: 60%;
+  margin: auto;
+  text-align: justify;
+  margin-bottom: 30px;
 }
-.innerback{
+.divsofpara p{
+  width: 90%;
+  margin-bottom: 20px;
+}
+.parahei{
+  
+}
+.divsofpara h4{
+ color: black;
+}
+.divsofpara a{
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: blue;
+ }
+ .divsofpara div{
+ margin-top: 40px;
+ box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+ padding: 15px;
+ }
+ .divsofpara span{
+  margin-left: 7px;
+  font-size: 12px;
+  }
+
+  /* <!-- Create a Stellar Subscriber --> */
+  .stellar{
     display: flex;
+    width: 70%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    padding: 40px;
+    margin-bottom: 150px;
+    text-align: justify;
+    /* box-sizing: border-box; */
+  }
+  .stellar img{
+  height: 250px;
+  }
+  .stellar h4{
+   color: black;
+    }
+  .stellar a{
+    text-decoration: none;
+    color: blue;
+   }
+   .stellar span{
+    margin-left: 7px;
+    font-size: 12px;
+    }
+
+    /* demo last section  */
+.blue-back{
+  background: linear-gradient(120.88deg,#3c2399 29.77%,#6c1c88 80.6%);
+  padding: 80px 0 80px;  
+}
+.ceocard{
+  background: white;
+  width: 70%;
+  margin-top: -150px;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.ceosmall {
+  border-radius: 50%;
+  width: 100px;
+}
+.colen{
+  margin-top: -120px!important;
+  margin-left: 190px;
+  width: 29%;
+}
+.ceocard h3{
+  color: black;
+  font-weight: bolder;
+}
+.ceopara{
+ text-align: justify;
+ font-size: 15px;
+ color: black;
+ margin-top: 10px;
+ margin-bottom: 15px;
+}
+.insidediv{
+  display: grid;
+  width: 70%;
+  margin: auto;
+  margin-left: 240px;
+  grid-template-columns: repeat(2,1fr);
+}
+.demo-input h3{
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: left;
+  width: 90%;
+}
+.demo-input h3{
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: left;
+  width: 90%;
+}
+.inputdiv{
+  border-radius: 20px;
+
+  width: 80%;
+}
+.email {
+  border-radius: 20px;
+  padding: 15px;
+  border: none;
+  color: lightgray!important;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #1A237E;
+}
+.demobutton{
+  border-radius: 20px;
+  padding: 15px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  background-color: #9575CD;
+}
+
+
+/* footer part */
+#footer{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+ 
+}
+#footer h3{
+  color: blue;
+  margin-left: 37px;
+}
+#footer a{
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+}
+.list li{
+  line-height: 24px;
+  list-style-type: none;
+}
+#social{
+  display: block;
+  width: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+#social a{
+  color: black;
 }
