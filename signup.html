@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'><link rel="stylesheet" href="/style/login.css">
+    <title>Subscription Management Software</title>
+    <link rel="stylesheet" href="./style/login.css">
+    <title>Subscription Management Software</title>
+</head>
+<body>
+  <div class="container">
+    <div class="screen">
+      <div class="screen__content">
+        <!-- <h1 id="heading">Please Enter Your Details</h1> -->
+        <form class="login" id="signInForm">
+          <div class="login__field">
+            <i class="login__icon fas fa-user"></i>
+            <input type="text" class="login__input" id="name" placeholder="Username">
+          </div>
+          <div class="login__field">
+            <i class="login__icon fas fa-user"></i>
+            <input type="email" class="login__input" id="email" placeholder="Email">
+          </div>
+          <div class="login__field">
+            <i class="login__icon fas fa-lock"></i>
+            <input type="password" class="login__input" id="password" placeholder="Password">
+          </div>
+          <button class="button login__submit">
+            <span class="button__text">Sign Up</span>
+            <i class="button__icon fas fa-chevron-right"></i>
+          </button>				
+        </form>
+      </div>
+      <div class="screen__background">
+        <span class="screen__background__shape screen__background__shape4"></span>
+        <span class="screen__background__shape screen__background__shape3"></span>		
+        <span class="screen__background__shape screen__background__shape2"></span>
+        <span class="screen__background__shape screen__background__shape1"></span>
+      </div>		
+    </div>
+  </div>
+
+        <!-- <div id="mainbox">
+            <div id="signin">
+                <h1 id="heading">Please Enter Your Details</h1>
+                <form id="signInForm">
+                  <input type="email" placeholder="email" id="name" />
+                  <input type="password" placeholder="password" id="password" />
+                  <input type="submit" value="Submit" />
+                </form>
+              </div>
+        </div> -->
+    <!-- </div> -->
+
+</body>
+
+<script>
+   let form = document.querySelector("form")
+
+let arr = JSON.parse(localStorage.getItem("userData")) || []
+
+form.addEventListener("submit",signData)
+
+function signData(e){
+  e.preventDefault()
+
+  let obj = {
+    name : form.name.value,
+    email : form.email.value,
+    password : form.password.value,
+}
+arr.push(obj)
+localStorage.setItem("userData", JSON.stringify(arr))
+console.log(arr)
+
+alert("Sign Up Successful")
+window.location.href = "login.html"
+}
+
+  </script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign up Page</title>
+  <style>
+      /* Write all necessery css here  */
+  </style>
+</head>
+
+<body>
+  <div id="signup">
+    <h1>Please Enter Your Details</h1>
+    <form>
+      <input type="text" placeholder="name" id="name"/>
+      <input type="email" placeholder="email" id="email"/>
+      <input type="password" placeholder="password"  id="password"/>
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+</body>
+<script>
+  let form = document.querySelector("form")
+
+  let arr = JSON.parse(localStorage.getItem("userData")) || []
+  
+  form.addEventListener("submit",signData)
+  
+  function signData(e){
+    e.preventDefault()
+
+    let obj = {
+      name : form.name.value,
+      email : form.email.value,
+      password : form.password.value,
+  }
+  arr.push(obj)
+  localStorage.setItem("userData", JSON.stringify(arr))
+  console.log(arr)
+ -->
+}
+  
+</script>
+
+</html>

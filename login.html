@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'><link rel="stylesheet" href="/style/login.css">
+    <title>Subscription Management Software</title>
+    <link rel="stylesheet" href="./style/login.css">
+    <title>Subscription Management Software</title>
+</head>
+<body>
+  <div>
+     <!-- navbar -->
+     <div id="navbar">
+      <!-- logo -->
+      <div >
+          <a href="./index.html"><h1><b>R</b>ecurio</h1></a>
+      </div>
+     
+      <!-- SignUp buttons -->
+      <div id="menu-button">
+          <a href="./signup.html" id="singnupbutton">Sign Up<span class="fa fa-angle-right"></span></a>
+      </div>
+  </div>
+
+    <!-- login part -->
+    <div class="container">
+      <div class="screen">
+        <div class="screen__content">
+          <form class="login" id="signInForm">
+            <div class="login__field">
+              <i class="login__icon fas fa-user"></i>
+              <input type="email" class="login__input" id="name" placeholder="User name / Email">
+            </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              <input type="password" class="login__input" id="password" placeholder="Password">
+            </div>
+            <button class="button login__submit">
+              <span class="button__text">Log In Now</span>
+              <i class="button__icon fas fa-chevron-right"></i>
+            </button>				
+          </form>
+        </div>
+        <div class="screen__background">
+          <span class="screen__background__shape screen__background__shape4"></span>
+          <span class="screen__background__shape screen__background__shape3"></span>		
+          <span class="screen__background__shape screen__background__shape2"></span>
+          <span class="screen__background__shape screen__background__shape1"></span>
+        </div>		
+      </div>
+    </div>
+  </div>
+
+        <!-- <div id="mainbox">
+            <div id="signin">
+                <h1 id="heading">Please Enter Your Details</h1>
+                <form id="signInForm">
+                  <input type="email" placeholder="email" id="name" />
+                  <input type="password" placeholder="password" id="password" />
+                  <input type="submit" value="Submit" />
+                </form>
+              </div>
+        </div> -->
+    <!-- </div> -->
+
+</body>
+
+<script>
+    let arr = JSON.parse(localStorage.getItem("userData")) || []
+
+    let signInForm = document.getElementById("signInForm")
+    let heading = document.getElementById("heading")
+
+    signInForm.addEventListener("submit",func)
+
+    function func(e){
+      e.preventDefault()
+      let flag = false
+
+      arr.forEach((ele,ind) => {
+        // console.log(signInForm.name.value, signInForm.password.value );
+        if(ele.email == signInForm.name.value && ele.password == signInForm.password.value){
+          console.log('yes');
+          flag = true
+          return
+        }
+        // else if(ele.email !== signInForm.name.value && ele.password !== signInForm.password.value){
+        //   console.log('no');
+          
+        // }
+      })
+
+      if(flag){
+      alert("Sign in Successful")
+      window.location.href = "login-index.html"
+      console.log("ok")
+    }
+      else {
+        alert("Invalid Username , Create Account")
+      }
+    }
+
+  </script>
+</html>
