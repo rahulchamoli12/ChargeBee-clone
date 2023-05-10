@@ -1,6 +1,6 @@
 # Chargebee Clone 
 
-Chargebee is a recurring billing and subscription management tool that helps SaaS and SaaS-like businesses streamline Revenue Operations.
+Chargebee is the recurring revenue management platform for global scale. Leading companies trust Chargebee to power their full recurring revenue lifecycle, from subscription billing and invoicing to cash, accounting, renewal, and more.
 
 # Tech Stack
 - Html
