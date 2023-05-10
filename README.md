@@ -7,7 +7,7 @@ Chargebee is the recurring revenue management platform for global scale. Leading
 - Javascript
 - Css
 
-# Deployed Link 
+# Netlify Link 
 - https://darling-cobbler-fb82c5.netlify.app/
 
 # Features
